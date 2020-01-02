@@ -61,14 +61,23 @@ public extension TextStyles {
 	@discardableResult func black() -> Self {
 		return setting(textColor: .black)
 	}
-	@discardableResult func lightGray() -> Self {
+	@discardableResult func systemLightGray() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray6)
 	}
-	@discardableResult func darkGray() -> Self {
+	@discardableResult func systemDarkGray() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray)
 	}
-	@discardableResult func red() -> Self {
+	@discardableResult func systemRed() -> Self {
 		return setting(textColor: ColorCompatibility.systemRed)
+	}
+	@discardableResult func systemBlue() -> Self {
+		return setting(textColor: ColorCompatibility.systemBlue)
+	}
+	@discardableResult func systemGreen() -> Self {
+		return setting(textColor: ColorCompatibility.systemGreen)
+	}
+	@discardableResult func systemYellow() -> Self {
+		return setting(textColor: ColorCompatibility.systemYellow)
 	}
 }
 
@@ -141,8 +150,23 @@ public extension ButtonStyles {
 	@discardableResult func blackTitle(for state: UIControl.State = .normal) -> Self {
 		return titleColor(.black, for: state)
 	}
-	@discardableResult func redTitle(for state: UIControl.State = .normal) -> Self {
+	@discardableResult func systemDarkTitle(for state: UIControl.State = .normal) -> Self {
+		return titleColor(ColorCompatibility.systemGray, for: state)
+	}
+	@discardableResult func systemLightTitle(for state: UIControl.State = .normal) -> Self {
+		return titleColor(ColorCompatibility.systemGray6, for: state)
+	}
+	@discardableResult func systemRedTitle(for state: UIControl.State = .normal) -> Self {
 		return titleColor(ColorCompatibility.systemRed, for: state)
+	}
+	@discardableResult func systemBlueTitle(for state: UIControl.State = .normal) -> Self {
+		return titleColor(ColorCompatibility.systemBlue, for: state)
+	}
+	@discardableResult func systemGreenTitle(for state: UIControl.State = .normal) -> Self {
+		return titleColor(ColorCompatibility.systemGreen, for: state)
+	}
+	@discardableResult func systemYellowTitle(for state: UIControl.State = .normal) -> Self {
+		return titleColor(ColorCompatibility.systemYellow, for: state)
 	}
 }
 
