@@ -23,10 +23,6 @@ extension Default: ComponentAttributes {
 		return nil
 	}
 
-	public func buttonBackgroundColor(for state: UIControl.State, traits: UITraitCollection) -> UIColor? {
-		return nil
-	}
-
 	public func buttonBackgroundImage(for state: UIControl.State, traits: UITraitCollection) -> UIImage? {
 		return nil
 	}
@@ -89,6 +85,14 @@ extension Default: ComponentAttributes {
 		default:
 			return nil
 		}
+	}
+
+	public func buttonHeight(for traits: UITraitCollection) -> CGFloat? {
+		return nil
+	}
+
+	public func buttonWidthAspect(for traits: UITraitCollection) -> CGFloat? {
+		return nil
 	}
 }
 

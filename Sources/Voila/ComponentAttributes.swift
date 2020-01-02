@@ -19,7 +19,6 @@ public protocol NavigationBarAttributes {
 public protocol BarButtonAttributes {}
 
 public protocol ButtonAttributes {
-	func buttonBackgroundColor(for state: UIControl.State, traits: UITraitCollection) -> UIColor?
 	func buttonBackgroundImage(for state: UIControl.State, traits: UITraitCollection) -> UIImage?
 	func buttonTitleColor(for state: UIControl.State, traits: UITraitCollection) -> UIColor?
 	func buttonTitleFont(for state: UIControl.State, traits: UITraitCollection) -> UIFont?
@@ -43,6 +42,11 @@ public protocol CollectionAttributes {
 	func collectionCellBackgroundColor(forState state: UIControl.State, traits: UITraitCollection) -> UIColor?
 }
 
+public protocol AdaptiveComponentAttributes {
+	func buttonHeight(for traits: UITraitCollection) -> CGFloat?
+	func buttonWidthAspect(for traits: UITraitCollection) -> CGFloat?
+}
+
 public protocol ComponentAttributes: ViewAttributes
 	, NavigationBarAttributes
 	, BarButtonAttributes
@@ -50,4 +54,5 @@ public protocol ComponentAttributes: ViewAttributes
 	, TextAttributes
 	, TableAttributes
 	, CollectionAttributes
+	, AdaptiveComponentAttributes
 {}

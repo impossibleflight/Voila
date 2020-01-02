@@ -1,731 +1,405 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      "OBJ_1" = {
-         isa = "PBXProject";
-         attributes = {
-            LastSwiftMigration = "9999";
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = "OBJ_2";
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "en";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en"
-         );
-         mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_28";
-         projectDirPath = ".";
-         targets = (
-            "Voila::Voila",
-            "Voila::SwiftPMPackageDescription",
-            "Voila::VoilaPackageTests::ProductTarget",
-            "Voila::VoilaTests"
-         );
-      };
-      "OBJ_10" = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "Appearance.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_12" = {
-         isa = "PBXFileReference";
-         path = "ComponentAttributes.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_13" = {
-         isa = "PBXFileReference";
-         path = "ComponentStyles.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_14" = {
-         isa = "PBXFileReference";
-         path = "Default.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_15" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_16"
-         );
-         name = "Ext";
-         path = "Ext";
-         sourceTree = "<group>";
-      };
-      "OBJ_16" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_17"
-         );
-         name = "ColorCompatibility";
-         path = "ColorCompatibility";
-         sourceTree = "<group>";
-      };
-      "OBJ_17" = {
-         isa = "PBXFileReference";
-         path = "ColorCompatibility.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "Stylable.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         path = "Styling.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_2" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_3",
-            "OBJ_4"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_20" = {
-         isa = "PBXFileReference";
-         path = "Theme.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "UIAppearance.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "UIColor.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "Window.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_24" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_25"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_25" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_26",
-            "OBJ_27"
-         );
-         name = "VoilaTests";
-         path = "Tests/VoilaTests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_26" = {
-         isa = "PBXFileReference";
-         path = "VoilaTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "XCTestManifests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_28" = {
-         isa = "PBXGroup";
-         children = (
-            "Voila::VoilaTests::Product",
-            "Voila::Voila::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "OBJ_3" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1",
-               "DEBUG=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE",
-               "DEBUG"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      "OBJ_31" = {
-         isa = "PBXFileReference";
-         path = "Voila";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "LICENSE";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
-         path = "TODO";
-         sourceTree = "<group>";
-      };
-      "OBJ_34" = {
-         isa = "PBXFileReference";
-         path = "README.md";
-         sourceTree = "<group>";
-      };
-      "OBJ_36" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_37",
-            "OBJ_38"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_37" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Voila.xcodeproj/Voila_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Voila";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Voila";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_38" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Voila.xcodeproj/Voila_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "Voila";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "Voila";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_39" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_40",
-            "OBJ_41",
-            "OBJ_42",
-            "OBJ_43",
-            "OBJ_44",
-            "OBJ_45",
-            "OBJ_46",
-            "OBJ_47",
-            "OBJ_48",
-            "OBJ_49",
-            "OBJ_50"
-         );
-      };
-      "OBJ_4" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      "OBJ_40" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
-      };
-      "OBJ_41" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
-      };
-      "OBJ_42" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
-      };
-      "OBJ_43" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
-      };
-      "OBJ_44" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
-      };
-      "OBJ_45" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
-      };
-      "OBJ_46" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_47" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_48" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
-      };
-      "OBJ_49" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_24",
-            "OBJ_28",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33",
-            "OBJ_34"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_50" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_51" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_53" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_54",
-            "OBJ_55"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_54" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.1"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_55" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.1"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_56" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_57"
-         );
-      };
-      "OBJ_57" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
-      };
-      "OBJ_59" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_60",
-            "OBJ_61"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_6" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_60" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_61" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_62" = {
-         isa = "PBXTargetDependency";
-         target = "Voila::VoilaTests";
-      };
-      "OBJ_64" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_65",
-            "OBJ_66"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_65" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Voila.xcodeproj/VoilaTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "VoilaTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_66" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Voila.xcodeproj/VoilaTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "11.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "VoilaTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_67" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_68",
-            "OBJ_69"
-         );
-      };
-      "OBJ_68" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
-      };
-      "OBJ_69" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
-      };
-      "OBJ_7" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_8"
-         );
-         name = "Sources";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_70" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_71"
-         );
-      };
-      "OBJ_71" = {
-         isa = "PBXBuildFile";
-         fileRef = "Voila::Voila::Product";
-      };
-      "OBJ_72" = {
-         isa = "PBXTargetDependency";
-         target = "Voila::Voila";
-      };
-      "OBJ_8" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_9",
-            "OBJ_10",
-            "OBJ_11",
-            "OBJ_12",
-            "OBJ_13",
-            "OBJ_14",
-            "OBJ_15",
-            "OBJ_18",
-            "OBJ_19",
-            "OBJ_20",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23"
-         );
-         name = "Voila";
-         path = "Voila";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_9" = {
-         isa = "PBXFileReference";
-         path = "Voila.h";
-         sourceTree = "<group>";
-      };
-      "Voila::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_53";
-         buildPhases = (
-            "OBJ_56"
-         );
-         dependencies = (
-         );
-         name = "VoilaPackageDescription";
-         productName = "VoilaPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "Voila::Voila" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_36";
-         buildPhases = (
-            "OBJ_39",
-            "OBJ_51"
-         );
-         dependencies = (
-         );
-         name = "Voila";
-         productName = "Voila";
-         productReference = "Voila::Voila::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "Voila::Voila::Product" = {
-         isa = "PBXFileReference";
-         path = "Voila.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "Voila::VoilaPackageTests::ProductTarget" = {
-         isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_59";
-         buildPhases = (
-         );
-         dependencies = (
-            "OBJ_62"
-         );
-         name = "VoilaPackageTests";
-         productName = "VoilaPackageTests";
-      };
-      "Voila::VoilaTests" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_64";
-         buildPhases = (
-            "OBJ_67",
-            "OBJ_70"
-         );
-         dependencies = (
-            "OBJ_72"
-         );
-         name = "VoilaTests";
-         productName = "VoilaTests";
-         productReference = "Voila::VoilaTests::Product";
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      "Voila::VoilaTests::Product" = {
-         isa = "PBXFileReference";
-         path = "VoilaTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-   };
-   rootObject = "OBJ_1";
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A44D417223BBEF0E0024473B /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D417123BBEF0E0024473B /* Appearance.swift */; };
+		A44D417723BBEF7F0024473B /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D417623BBEF7F0024473B /* Default.swift */; };
+		A44D417B23BBF0C50024473B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D417A23BBF0C50024473B /* Theme.swift */; };
+		A44D417D23BBF1270024473B /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D417C23BBF1270024473B /* Window.swift */; };
+		A44D417F23BBF50A0024473B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D417E23BBF50A0024473B /* UIColor.swift */; };
+		A44D418123BBFCDE0024473B /* UIAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D418023BBFCDE0024473B /* UIAppearance.swift */; };
+		A44D418523BD095F0024473B /* ComponentStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D418423BD095F0024473B /* ComponentStyles.swift */; };
+		A44D418723BD09A00024473B /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D418623BD09A00024473B /* Stylable.swift */; };
+		A44D418C23BD30CC0024473B /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = A44D418B23BD30CC0024473B /* TODO */; };
+		A44D418E23BD328D0024473B /* ComponentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D418D23BD328D0024473B /* ComponentAttributes.swift */; };
+		A454564123BAA8DA006918A2 /* Voila.h in Headers */ = {isa = PBXBuildFile; fileRef = A454563F23BAA8DA006918A2 /* Voila.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A454564823BAA906006918A2 /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454564723BAA906006918A2 /* Styling.swift */; };
+		A47D4BB623BE3E2500DA579B /* ColorCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D4BB523BE3E2500DA579B /* ColorCompatibility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A44D417123BBEF0E0024473B /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		A44D417623BBEF7F0024473B /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		A44D417A23BBF0C50024473B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A44D417C23BBF1270024473B /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		A44D417E23BBF50A0024473B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A44D418023BBFCDE0024473B /* UIAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppearance.swift; sourceTree = "<group>"; };
+		A44D418423BD095F0024473B /* ComponentStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStyles.swift; sourceTree = "<group>"; };
+		A44D418623BD09A00024473B /* Stylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
+		A44D418923BD29DF0024473B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A44D418A23BD29DF0024473B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A44D418B23BD30CC0024473B /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		A44D418D23BD328D0024473B /* ComponentAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentAttributes.swift; sourceTree = "<group>"; };
+		A454563C23BAA8DA006918A2 /* Voila.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voila.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A454563F23BAA8DA006918A2 /* Voila.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voila.h; sourceTree = "<group>"; };
+		A454564023BAA8DA006918A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A454564723BAA906006918A2 /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		A47D4BB523BE3E2500DA579B /* ColorCompatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCompatibility.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A454563923BAA8DA006918A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A454563223BAA8DA006918A2 = {
+			isa = PBXGroup;
+			children = (
+				A44D418B23BD30CC0024473B /* TODO */,
+				A44D418A23BD29DF0024473B /* LICENSE */,
+				A44D418923BD29DF0024473B /* README.md */,
+				A454563E23BAA8DA006918A2 /* Voila */,
+				A454563D23BAA8DA006918A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A454563D23BAA8DA006918A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A454563C23BAA8DA006918A2 /* Voila.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A454563E23BAA8DA006918A2 /* Voila */ = {
+			isa = PBXGroup;
+			children = (
+				A454563F23BAA8DA006918A2 /* Voila.h */,
+				A44D417123BBEF0E0024473B /* Appearance.swift */,
+				A44D417A23BBF0C50024473B /* Theme.swift */,
+				A454564723BAA906006918A2 /* Styling.swift */,
+				A44D418623BD09A00024473B /* Stylable.swift */,
+				A44D418423BD095F0024473B /* ComponentStyles.swift */,
+				A44D418D23BD328D0024473B /* ComponentAttributes.swift */,
+				A44D417C23BBF1270024473B /* Window.swift */,
+				A44D417E23BBF50A0024473B /* UIColor.swift */,
+				A44D418023BBFCDE0024473B /* UIAppearance.swift */,
+				A44D417623BBEF7F0024473B /* Default.swift */,
+				A47D4BB323BE3DF200DA579B /* Ext */,
+				A454564023BAA8DA006918A2 /* Info.plist */,
+			);
+			name = Voila;
+			path = Sources/Voila;
+			sourceTree = "<group>";
+		};
+		A47D4BB323BE3DF200DA579B /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				A47D4BB423BE3DFE00DA579B /* ColorCompatibility */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		A47D4BB423BE3DFE00DA579B /* ColorCompatibility */ = {
+			isa = PBXGroup;
+			children = (
+				A47D4BB523BE3E2500DA579B /* ColorCompatibility.swift */,
+			);
+			path = ColorCompatibility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A454563723BAA8DA006918A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A454564123BAA8DA006918A2 /* Voila.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A454563B23BAA8DA006918A2 /* Voila */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A454564423BAA8DA006918A2 /* Build configuration list for PBXNativeTarget "Voila" */;
+			buildPhases = (
+				A454563723BAA8DA006918A2 /* Headers */,
+				A454563823BAA8DA006918A2 /* Sources */,
+				A454563923BAA8DA006918A2 /* Frameworks */,
+				A454563A23BAA8DA006918A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voila;
+			productName = Voila;
+			productReference = A454563C23BAA8DA006918A2 /* Voila.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A454563323BAA8DA006918A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Impossible Flight, LLC";
+				TargetAttributes = {
+					A454563B23BAA8DA006918A2 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = A454563623BAA8DA006918A2 /* Build configuration list for PBXProject "Voila" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A454563223BAA8DA006918A2;
+			productRefGroup = A454563D23BAA8DA006918A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A454563B23BAA8DA006918A2 /* Voila */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A454563A23BAA8DA006918A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44D418C23BD30CC0024473B /* TODO in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A454563823BAA8DA006918A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47D4BB623BE3E2500DA579B /* ColorCompatibility.swift in Sources */,
+				A44D418523BD095F0024473B /* ComponentStyles.swift in Sources */,
+				A454564823BAA906006918A2 /* Styling.swift in Sources */,
+				A44D418E23BD328D0024473B /* ComponentAttributes.swift in Sources */,
+				A44D417D23BBF1270024473B /* Window.swift in Sources */,
+				A44D417723BBEF7F0024473B /* Default.swift in Sources */,
+				A44D417B23BBF0C50024473B /* Theme.swift in Sources */,
+				A44D418723BD09A00024473B /* Stylable.swift in Sources */,
+				A44D417F23BBF50A0024473B /* UIColor.swift in Sources */,
+				A44D417223BBEF0E0024473B /* Appearance.swift in Sources */,
+				A44D418123BBFCDE0024473B /* UIAppearance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A454564223BAA8DA006918A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A454564323BAA8DA006918A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A454564523BAA8DA006918A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZXZ4CGK7P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Voila/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.impossibleflight.Voila;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A454564623BAA8DA006918A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZXZ4CGK7P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Voila/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.impossibleflight.Voila;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A454563623BAA8DA006918A2 /* Build configuration list for PBXProject "Voila" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A454564223BAA8DA006918A2 /* Debug */,
+				A454564323BAA8DA006918A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A454564423BAA8DA006918A2 /* Build configuration list for PBXNativeTarget "Voila" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A454564523BAA8DA006918A2 /* Debug */,
+				A454564623BAA8DA006918A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A454563323BAA8DA006918A2 /* Project object */;
 }
