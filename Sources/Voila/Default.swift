@@ -147,12 +147,3 @@ extension ComponentStyling {
 		return tableCell
 	}
 }
-
-public extension ColorCompatibility {
-    static var systemGray: UIColor {
-        if #available(iOS 13, *) {
-            return .systemGray
-        }
-        return UIColor(red: 0.5568627451, green: 0.5568627451, blue: 0.5568627451, alpha: 1.0)
-    }
-}

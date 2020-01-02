@@ -62,13 +62,13 @@ public extension TextStyles {
 		return setting(textColor: .black)
 	}
 	@discardableResult func lightGray() -> Self {
-		return setting(textColor: .lightGray)
+		return setting(textColor: ColorCompatibility.systemGray6)
 	}
 	@discardableResult func darkGray() -> Self {
-		return setting(textColor: .darkGray)
+		return setting(textColor: ColorCompatibility.systemGray)
 	}
 	@discardableResult func red() -> Self {
-		return setting(textColor: .red)
+		return setting(textColor: ColorCompatibility.systemRed)
 	}
 }
 
@@ -142,7 +142,7 @@ public extension ButtonStyles {
 		return titleColor(.black, for: state)
 	}
 	@discardableResult func redTitle(for state: UIControl.State = .normal) -> Self {
-		return titleColor(.red, for: state)
+		return titleColor(ColorCompatibility.systemRed, for: state)
 	}
 }
 
