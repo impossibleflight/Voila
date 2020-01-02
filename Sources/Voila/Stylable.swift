@@ -59,6 +59,14 @@ public extension StylableComponent where Self: UIView {
 		}
 		return self
 	}
+	@discardableResult func tableViewBackground() -> Self {
+		self.backgroundColor = voila.tableViewBackgroundColor(for: .plain, traits: self.traitCollection)
+		return self
+	}
+	@discardableResult func groupedTableViewBackground() -> Self {
+		self.backgroundColor = voila.tableViewBackgroundColor(for: .grouped, traits: self.traitCollection)
+		return self
+	}
 }
 
 public extension StylableComponent where Self: UILabel {
