@@ -38,6 +38,7 @@ public extension ViewStyles where Self: UIView {
 	}
 }
 
+extension UIView: ViewStyles {}
 
 //MARK: TextStyles
 
@@ -98,8 +99,6 @@ public extension TextStyles {
 	}
 }
 
-extension UILabel: TextStyles {}
-
 public extension TextStyles where Self: UILabel {
 	@discardableResult func setting(textColor: UIColor) -> Self {
 		self.textColor = textColor
@@ -119,6 +118,9 @@ public extension TextStyles where Self: UILabel {
 		return self
 	}
 }
+
+extension UILabel: TextStyles {}
+
 
 //MARK: UIButton
 
@@ -144,10 +146,11 @@ public extension ButtonStyles {
 	}
 }
 
-extension UIButton: ButtonStyles {}
 public extension ButtonStyles where Self: UIButton {
 	@discardableResult func titleColor(_ color: UIColor, for state: UIControl.State = .normal) -> Self {
 		self.setTitleColor(color, for: state)
 		return self
 	}
 }
+
+extension UIButton: ButtonStyles {}
