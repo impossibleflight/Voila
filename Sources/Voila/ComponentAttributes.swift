@@ -35,11 +35,14 @@ public protocol TextAttributes {
 public protocol TableAttributes {
 	func tableViewBackgroundColor(for style: UITableView.Style, traits: UITraitCollection) -> UIColor?
 	func tableCellBackgroundColor(forState state: UIControl.State, style: UITableView.Style, traits: UITraitCollection) -> UIColor?
+	func tableViewSectionHeaderBackgroundColor(for style: UITableView.Style, traits: UITraitCollection) -> UIColor?
 }
 
 public protocol CollectionAttributes {
 	func collectionViewBackgroundColor(for traits: UITraitCollection) -> UIColor?
 	func collectionCellBackgroundColor(forState state: UIControl.State, traits: UITraitCollection) -> UIColor?
+	func collectionViewSectionHeaderBackgroundColor(for traits: UITraitCollection) -> UIColor?
+	func collectionViewSectionFooterBackgroundColor(for traits: UITraitCollection) -> UIColor?
 }
 
 public protocol AdaptiveComponentAttributes {

@@ -14,7 +14,8 @@ public struct Default: Theme {
 	public func apply(application: UIApplication) { }
 }
 
-extension Default: ComponentAttributes {
+/// Default component attributes that all themes can fall back on
+extension ComponentAttributes {
 	public func backgroundColor(for traits: UITraitCollection) -> UIColor? {
 		return ColorCompatibility.systemBackground
 	}
@@ -74,6 +75,10 @@ extension Default: ComponentAttributes {
 		}
 	}
 
+	public func tableViewSectionHeaderBackgroundColor(for style: UITableView.Style, traits: UITraitCollection) -> UIColor? {
+		return ColorCompatibility.secondarySystemBackground
+	}
+
 	public func collectionViewBackgroundColor(for traits: UITraitCollection) -> UIColor? {
 		return ColorCompatibility.systemBackground
 	}
@@ -87,6 +92,14 @@ extension Default: ComponentAttributes {
 		}
 	}
 
+	public func collectionViewSectionHeaderBackgroundColor(for traits: UITraitCollection) -> UIColor? {
+		return ColorCompatibility.secondarySystemBackground
+	}
+
+	public func collectionViewSectionFooterBackgroundColor(for traits: UITraitCollection) -> UIColor? {
+		return ColorCompatibility.secondarySystemBackground
+	}
+
 	public func buttonHeight(for traits: UITraitCollection) -> CGFloat? {
 		return nil
 	}
@@ -96,7 +109,8 @@ extension Default: ComponentAttributes {
 	}
 }
 
-extension Default: ComponentStyling {
+/// Default styling behaviors that all themes can fall back on
+extension ComponentStyling {
 	@discardableResult public func style<T>(_ window: T) -> T where T : UIWindow {
 		return window
 	}
