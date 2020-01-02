@@ -1,2 +1,5 @@
 # Voila
-Flexible, functional styling for UIKit components in Swift
+
+Flexible, functional styling for UIKit components in Swift.
+
+
