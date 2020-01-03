@@ -58,6 +58,7 @@ open class VerticalStackView: UIStackView {
 
 public protocol StackStyles {
 	@discardableResult func setting(axis: NSLayoutConstraint.Axis) -> Self
+	@discardableResult func setting(distribution: UIStackView.Distribution) -> Self
 	@discardableResult func setting(alignment: UIStackView.Alignment) -> Self
 	@discardableResult func setting(spacing: CGFloat) -> Self
 }
@@ -68,6 +69,21 @@ public extension StackStyles {
 	}
 	@discardableResult func vertical() -> Self {
 		return setting(axis: .vertical)
+	}
+	@discardableResult func filled() -> Self {
+		return setting(distribution: .fill)
+	}
+	@discardableResult func filledEqually() -> Self {
+		return setting(distribution: .fillEqually)
+	}
+	@discardableResult func filledProportionally() -> Self {
+		return setting(distribution: .fillProportionally)
+	}
+	@discardableResult func equallySpaced() -> Self {
+		return setting(distribution: .equalSpacing)
+	}
+	@discardableResult func equallyCentered() -> Self {
+		return setting(distribution: .equalCentering)
 	}
 	@discardableResult func flush() -> Self {
 		return padded(by: 0)
@@ -81,10 +97,10 @@ public extension StackStyles {
 	@discardableResult func padded(by padding: CGFloat) -> Self {
 		return setting(spacing: padding)
 	}
-	@discardableResult func fill() -> Self {
+	@discardableResult func resizeSubviewsToFill() -> Self {
 		return setting(alignment: .fill)
 	}
-	@discardableResult func center() -> Self {
+	@discardableResult func centerAligned() -> Self {
 		return setting(alignment: .center)
 	}
 }
@@ -92,6 +108,10 @@ public extension StackStyles {
 public extension StackStyles where Self: UIStackView {
 	@discardableResult func setting(axis: NSLayoutConstraint.Axis) -> Self {
 		self.axis = .horizontal
+		return self
+	}
+	@discardableResult func setting(distribution: UIStackView.Distribution) -> Self {
+		self.distribution = distribution
 		return self
 	}
 	@discardableResult func setting(alignment: UIStackView.Alignment) -> Self {
@@ -105,25 +125,25 @@ public extension StackStyles where Self: UIStackView {
 }
 
 public extension StackStyles where Self: HorizontalStackView {
-	@discardableResult func top() -> Self {
+	@discardableResult func topAligned() -> Self {
 		return setting(alignment: .top)
 	}
-	@discardableResult func bottom() -> Self {
+	@discardableResult func bottomAligned() -> Self {
 		return setting(alignment: .bottom)
 	}
-	@discardableResult func firstBaseline() -> Self {
+	@discardableResult func firstBaselineAligned() -> Self {
 		return setting(alignment: .firstBaseline)
 	}
-	@discardableResult func lastBaseline() -> Self {
+	@discardableResult func lastBaselineAligned() -> Self {
 		return setting(alignment: .lastBaseline)
 	}
 }
 
 public extension StackStyles where Self: VerticalStackView {
-	@discardableResult func leading() -> Self {
+	@discardableResult func leadingAligned() -> Self {
 		return setting(alignment: .leading)
 	}
-	@discardableResult func trailing() -> Self {
+	@discardableResult func trailingAligned() -> Self {
 		return setting(alignment: .trailing)
 	}
 }
