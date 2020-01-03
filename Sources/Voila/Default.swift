@@ -20,6 +20,9 @@ extension ComponentAttributes {
 	public func backgroundColor(for traits: UITraitCollection) -> UIColor? {
 		return ColorCompatibility.systemBackground
 	}
+	public func disabledbackgroundColor(for traits: UITraitCollection) -> UIColor? {
+		return ColorCompatibility.systemGray6
+	}
 	public func underpageBackgroundColor(for traits: UITraitCollection) -> UIColor? {
 		return ColorCompatibility.systemGray4
 	}
