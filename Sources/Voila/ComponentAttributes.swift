@@ -10,6 +10,8 @@ import UIKit
 
 public protocol ViewAttributes {
 	func backgroundColor(for traits: UITraitCollection) -> UIColor?
+	func underpageBackgroundColor(for traits: UITraitCollection) -> UIColor?
+	func scrollViewBackgroundColor(for traits: UITraitCollection) -> UIColor?
 }
 
 public protocol NavigationBarAttributes {

@@ -11,7 +11,7 @@ import UIKit
 //MARK: View styles
 
 public protocol ViewStyles {
-	@discardableResult func setting(backgroundColor: UIColor) -> Self
+	@discardableResult func setting(backgroundColor: UIColor?) -> Self
 	@discardableResult func setting(margins: UIEdgeInsets) -> Self
 }
 
@@ -28,7 +28,7 @@ public extension ViewStyles {
 }
 
 public extension ViewStyles where Self: UIView {
-	@discardableResult func setting(backgroundColor: UIColor) -> Self {
+	@discardableResult func setting(backgroundColor: UIColor?) -> Self {
 		self.backgroundColor = backgroundColor
 		return self
 	}

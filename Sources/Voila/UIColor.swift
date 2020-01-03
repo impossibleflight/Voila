@@ -105,23 +105,3 @@ public extension UIColor {
 		return UIColor(white: white, alpha: 1.0)
 	}
 }
-
-//MARK: Background colors
-
-public extension UIColor {
-	static var lightBackgroundColor: UIColor {
-		return .gray(0.92)
-	}
-	static var backgroundColor: UIColor {
-		return .gray(0.66 )
-	}
-	static var darkBackgroundColor: UIColor {
-		return .gray(0.43)
-	}
-	static var underpageBackgroundColor: UIColor {
-		return .gray(0.55)
-	}
-	static var scrollViewBackgroundColor: UIColor {
-		return .gray(0.37)
-	}
-}

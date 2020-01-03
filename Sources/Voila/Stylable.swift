@@ -53,19 +53,23 @@ public extension StylableComponent where Self: UIView {
 	@discardableResult func dark() -> Self {
 		if #available(iOS 12.0, *) {
 			let traits = UITraitCollection(traitsFrom: [self.traitCollection, UITraitCollection(userInterfaceStyle: .dark)])
-			self.backgroundColor = voila.backgroundColor(for: traits)
-		} else {
-			self.backgroundColor = voila.backgroundColor(for: self.traitCollection)
+			return self.setting(backgroundColor: voila.backgroundColor(for: traits))
 		}
-		return self
+
+		return self.setting(backgroundColor: voila.backgroundColor(for: self.traitCollection))
 	}
 	@discardableResult func tableViewBackground() -> Self {
-		self.backgroundColor = voila.tableViewBackgroundColor(for: .plain, traits: self.traitCollection)
-		return self
+		return self.setting(backgroundColor: voila.tableViewBackgroundColor(for: .plain, traits: self.traitCollection))
 	}
 	@discardableResult func groupedTableViewBackground() -> Self {
-		self.backgroundColor = voila.tableViewBackgroundColor(for: .grouped, traits: self.traitCollection)
-		return self
+		return self.setting(backgroundColor: voila.tableViewBackgroundColor(for: .grouped, traits: self.traitCollection))
+	}
+
+	@discardableResult func underpageBackground() -> Self {
+		return self.setting(backgroundColor: voila.underpageBackgroundColor(for: self.traitCollection))
+	}
+	@discardableResult func scrollViewBackground() -> Self {
+		return self.setting(backgroundColor: voila.scrollViewBackgroundColor(for: self.traitCollection))
 	}
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 /// A theme that applies no styling and just uses the defaults for component attributes
 public struct Default: Theme {
 	public var identifier: AnyHashable = "👏"
@@ -18,6 +19,13 @@ public struct Default: Theme {
 extension ComponentAttributes {
 	public func backgroundColor(for traits: UITraitCollection) -> UIColor? {
 		return ColorCompatibility.systemBackground
+	}
+	public func underpageBackgroundColor(for traits: UITraitCollection) -> UIColor? {
+		return ColorCompatibility.systemGray4
+	}
+
+	public func scrollViewBackgroundColor(for traits: UITraitCollection) -> UIColor? {
+		return ColorCompatibility.systemGray
 	}
 
 	public func barTintColor(for traits: UITraitCollection) -> UIColor? {
