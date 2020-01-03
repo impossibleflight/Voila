@@ -10,7 +10,7 @@ import UIKit
 
 public protocol ViewAttributes {
 	func backgroundColor(for traits: UITraitCollection) -> UIColor?
-	func disabledbackgroundColor(for traits: UITraitCollection) -> UIColor?
+	func disabledBackgroundColor(for traits: UITraitCollection) -> UIColor?
 	func underpageBackgroundColor(for traits: UITraitCollection) -> UIColor?
 	func scrollViewBackgroundColor(for traits: UITraitCollection) -> UIColor?
 }
