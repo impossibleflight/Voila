@@ -40,7 +40,97 @@ public extension ViewStyles where Self: UIView {
 
 extension UIView: ViewStyles {}
 
-//MARK: TextStyles
+//MARK: StackView styles
+
+open class HorizontalStackView: UIStackView {
+	open override var axis: NSLayoutConstraint.Axis {
+		get { return .horizontal }
+		set {}
+	}
+}
+
+open class VerticalStackView: UIStackView {
+	open override var axis: NSLayoutConstraint.Axis {
+		get { return .vertical }
+		set {}
+	}
+}
+
+public protocol StackStyles {
+	@discardableResult func setting(axis: NSLayoutConstraint.Axis) -> Self
+	@discardableResult func setting(alignment: UIStackView.Alignment) -> Self
+	@discardableResult func setting(spacing: CGFloat) -> Self
+}
+
+public extension StackStyles {
+	@discardableResult func horizontal() -> Self {
+		return setting(axis: .horizontal)
+	}
+	@discardableResult func vertical() -> Self {
+		return setting(axis: .vertical)
+	}
+	@discardableResult func flush() -> Self {
+		return padded(by: 0)
+	}
+	@discardableResult func paragraphPadding() -> Self {
+		return padded(by: 8)
+	}
+	@discardableResult func standardPadding() -> Self {
+		return padded(by: 20)
+	}
+	@discardableResult func padded(by padding: CGFloat) -> Self {
+		return setting(spacing: padding)
+	}
+	@discardableResult func fill() -> Self {
+		return setting(alignment: .fill)
+	}
+	@discardableResult func center() -> Self {
+		return setting(alignment: .center)
+	}
+}
+
+public extension StackStyles where Self: UIStackView {
+	@discardableResult func setting(axis: NSLayoutConstraint.Axis) -> Self {
+		self.axis = .horizontal
+		return self
+	}
+	@discardableResult func setting(alignment: UIStackView.Alignment) -> Self {
+		self.alignment = alignment
+		return self
+	}
+	@discardableResult func setting(spacing: CGFloat) -> Self {
+		self.spacing = spacing
+		return self
+	}
+}
+
+public extension StackStyles where Self: HorizontalStackView {
+	@discardableResult func top() -> Self {
+		return setting(alignment: .top)
+	}
+	@discardableResult func bottom() -> Self {
+		return setting(alignment: .bottom)
+	}
+	@discardableResult func firstBaseline() -> Self {
+		return setting(alignment: .firstBaseline)
+	}
+	@discardableResult func lastBaseline() -> Self {
+		return setting(alignment: .lastBaseline)
+	}
+}
+
+public extension StackStyles where Self: VerticalStackView {
+	@discardableResult func leading() -> Self {
+		return setting(alignment: .leading)
+	}
+	@discardableResult func trailing() -> Self {
+		return setting(alignment: .trailing)
+	}
+}
+
+extension UIStackView: StackStyles {}
+
+//MARK: Text styles
 
 public protocol TextStyles {
 	@discardableResult func setting(textColor: UIColor) -> Self
@@ -131,7 +221,7 @@ public extension TextStyles where Self: UILabel {
 extension UILabel: TextStyles {}
 
 
-//MARK: UIButton
+//MARK: Button styles
 
 
 public protocol ButtonStyles {
