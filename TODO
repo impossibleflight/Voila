@@ -1,3 +1,4 @@
 - [ ] Documentation
 - [ ] Support more component attributes for UIKit components
 - [ ] Support more component styling behaviors for UIKit components
+- [ ] Use Sourcery to generate a lot of the boilerplate styles
