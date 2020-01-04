@@ -15,6 +15,8 @@ import UIKit
 public protocol ViewStyles {
 	@discardableResult func setting(backgroundColor: UIColor?) -> Self
 	@discardableResult func setting(margins: UIEdgeInsets) -> Self
+	@discardableResult func setting(borderWidth: CGFloat) -> Self
+	@discardableResult func setting(borderColor: UIColor) -> Self
 }
 
 public extension ViewStyles {
@@ -26,6 +28,12 @@ public extension ViewStyles {
 	}
 	@discardableResult func black() -> Self {
 		return setting(backgroundColor: .black)
+	}
+}
+
+public extension ViewStyles {
+	@discardableResult func bordered(color: UIColor = ColorCompatibility.separator, width: CGFloat = 1.0) -> Self {
+		return setting(borderColor: color).setting(borderWidth: width)
 	}
 }
 
@@ -126,6 +134,14 @@ public extension ViewStyles where Self: UIView {
 	}
 	@discardableResult func setting(margins: UIEdgeInsets) -> Self {
 		self.layoutMargins = margins
+		return self
+	}
+	@discardableResult func setting(borderWidth: CGFloat) -> Self {
+		self.layer.borderWidth = borderWidth
+		return self
+	}
+	@discardableResult func setting(borderColor: UIColor) -> Self {
+		self.layer.borderColor = borderColor.cgColor
 		return self
 	}
 }
