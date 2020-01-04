@@ -158,3 +158,10 @@ extension ComponentStyling {
 		return tableCell
 	}
 }
+
+extension ComponentStyling where Self: ComponentAttributes {
+	@discardableResult public func style<T: UILabel>(_ label: T, for textStyle: UIFont.TextStyle) -> T {
+		label.font = self.font(forTextStyle: textStyle, traits: label.traitCollection)
+		return label
+	}
+}
