@@ -64,7 +64,9 @@ public extension StylableComponent where Self: UIView {
 	@discardableResult func groupedTableViewBackground() -> Self {
 		return self.setting(backgroundColor: voila.tableViewBackgroundColor(for: .grouped, traits: self.traitCollection))
 	}
-
+	@discardableResult func collectionViewBackground() -> Self {
+		return self.setting(backgroundColor: voila.collectionViewBackgroundColor(for: self.traitCollection))
+	}
 	@discardableResult func underpageBackground() -> Self {
 		return self.setting(backgroundColor: voila.underpageBackgroundColor(for: self.traitCollection))
 	}
@@ -76,6 +78,22 @@ public extension StylableComponent where Self: UIView {
 public extension StylableComponent where Self: UILabel {
 	func styled() -> Self {
 		return voila.style(self)
+	}
+	@discardableResult func light() -> Self {
+		if #available(iOS 12.0, *) {
+			let traits = UITraitCollection(traitsFrom: [self.traitCollection, UITraitCollection(userInterfaceStyle: .light)])
+			return setting(textColor: voila.textColor(for: traits)!)
+		} else {
+			return setting(textColor: .lightText)
+		}
+	}
+	@discardableResult func dark() -> Self {
+		if #available(iOS 12.0, *) {
+			let traits = UITraitCollection(traitsFrom: [self.traitCollection, UITraitCollection(userInterfaceStyle: .dark)])
+			return setting(textColor: voila.textColor(for: traits)!)
+		} else {
+			return setting(textColor: .lightText)
+		}
 	}
 	@discardableResult func largeTitle() -> Self {
 		return voila.style(self, for: .largeTitle)
@@ -115,6 +133,22 @@ public extension StylableComponent where Self: UILabel {
 public extension StylableComponent where Self: UIButton {
 	func styled() -> Self {
 		return voila.style(self)
+	}
+	@discardableResult func lightTitle() -> Self {
+		if #available(iOS 12.0, *) {
+			let traits = UITraitCollection(traitsFrom: [self.traitCollection, UITraitCollection(userInterfaceStyle: .light)])
+			return setting(titleColor: voila.textColor(for: traits)!, for: state)
+		} else {
+			return setting(titleColor: .lightText, for: state)
+		}
+	}
+	@discardableResult func darkTitle() -> Self {
+		if #available(iOS 12.0, *) {
+			let traits = UITraitCollection(traitsFrom: [self.traitCollection, UITraitCollection(userInterfaceStyle: .dark)])
+			return setting(titleColor: voila.textColor(for: traits)!, for: state)
+		} else {
+			return setting(titleColor: .darkText, for: state)
+		}
 	}
 }
 
