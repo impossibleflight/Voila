@@ -251,76 +251,76 @@ public protocol TextStyles {
 }
 
 extension TextStyles {
-	@discardableResult func white() -> Self {
+	@discardableResult func whiteTextColor() -> Self {
 		return setting(textColor: .white)
 	}
-	@discardableResult func black() -> Self {
+	@discardableResult func blackTextColor() -> Self {
 		return setting(textColor: .black)
 	}
 }
 
 public extension TextStyles {
-	@discardableResult func systemLabel() -> Self {
+	@discardableResult func systemLabelTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.label)
 	}
-	@discardableResult func systemSecondaryLabel() -> Self {
+	@discardableResult func systemSecondaryLabelTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.secondaryLabel)
 	}
-	@discardableResult func systemTertiaryLabel() -> Self {
+	@discardableResult func systemTertiaryLabelTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.tertiaryLabel)
 	}
-	@discardableResult func systemQuaternaryLabel() -> Self {
+	@discardableResult func systemQuaternaryLabelTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.quaternaryLabel)
 	}
-	@discardableResult func systemBlue() -> Self {
+	@discardableResult func systemBlueTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemBlue)
 	}
-	@discardableResult func systemGreen() -> Self {
+	@discardableResult func systemGreenTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGreen)
 	}
-	@discardableResult func systemIndigo() -> Self {
+	@discardableResult func systemIndigoTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemIndigo)
 	}
-	@discardableResult func systemOrange() -> Self {
+	@discardableResult func systemOrangeTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemOrange)
 	}
-	@discardableResult func systemPink() -> Self {
+	@discardableResult func systemPinkTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemPink)
 	}
-	@discardableResult func systemPurple() -> Self {
+	@discardableResult func systemPurpleTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemPurple)
 	}
-	@discardableResult func systemRed() -> Self {
+	@discardableResult func systemRedTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemRed)
 	}
-	@discardableResult func systemTeal() -> Self {
+	@discardableResult func systemTealTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemTeal)
 	}
-	@discardableResult func systemYellow() -> Self {
+	@discardableResult func systemYellowTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemYellow)
 	}
-	@discardableResult func systemGray() -> Self {
+	@discardableResult func systemGrayTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray)
 	}
-	@discardableResult func systemGray2() -> Self {
+	@discardableResult func systemGray2TextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray2)
 	}
-	@discardableResult func systemGray3() -> Self {
+	@discardableResult func systemGray3TextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray3)
 	}
-	@discardableResult func systemGray4() -> Self {
+	@discardableResult func systemGray4TextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray4)
 	}
-	@discardableResult func systemGray5() -> Self {
+	@discardableResult func systemGray5TextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray5)
 	}
-	@discardableResult func systemGray6() -> Self {
+	@discardableResult func systemGray6TextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray6)
 	}
-	@discardableResult func systemLightGray() -> Self {
+	@discardableResult func systemLightGrayTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray6)
 	}
-	@discardableResult func systemDarkGray() -> Self {
+	@discardableResult func systemDarkGrayTextColor() -> Self {
 		return setting(textColor: ColorCompatibility.systemGray)
 	}
 }
