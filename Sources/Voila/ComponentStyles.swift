@@ -65,6 +65,9 @@ public extension ViewStyles {
 	@discardableResult func tertiarySystemGroupedBackground() -> Self {
 		return setting(backgroundColor: ColorCompatibility.tertiarySystemGroupedBackground)
 	}
+	@discardableResult func separator() -> Self {
+		return setting(backgroundColor: ColorCompatibility.separator)
+	}
 	@discardableResult func systemBlue() -> Self {
 		return setting(backgroundColor: ColorCompatibility.systemBlue)
 	}
