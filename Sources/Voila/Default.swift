@@ -134,10 +134,6 @@ extension ComponentStyling {
 		return label
 	}
 
-	@discardableResult public func style<T: UILabel>(_ label: T, for textStyle: UIFont.TextStyle) -> T {
-		return label
-	}
-
 	@discardableResult public func style<T>(_ navBar: T) -> T where T : UINavigationBar {
 		return navBar
 	}

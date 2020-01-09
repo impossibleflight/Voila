@@ -267,6 +267,7 @@ public protocol TextStyles {
 	@discardableResult func setting(textColor: UIColor) -> Self
 	@discardableResult func setting(textAlignment: NSTextAlignment) -> Self
 	@discardableResult func setting(lineBreakMode: NSLineBreakMode) -> Self
+	@discardableResult func setting(numberOfLines: Int) -> Self
 }
 
 extension TextStyles {
@@ -370,6 +371,10 @@ public extension TextStyles {
 	@discardableResult func truncatingTail() -> Self {
 		return setting(lineBreakMode: .byTruncatingTail)
 	}
+	@discardableResult func multiline() -> Self {
+		return setting(lineBreakMode: .byWordWrapping)
+			.setting(numberOfLines: 0)
+	}
 }
 
 public extension TextStyles where Self: UILabel {
@@ -383,6 +388,10 @@ public extension TextStyles where Self: UILabel {
 	}
 	@discardableResult func setting(lineBreakMode: NSLineBreakMode) -> Self {
 		self.lineBreakMode = lineBreakMode
+		return self
+	}
+	@discardableResult func setting(numberOfLines: Int) -> Self {
+		self.numberOfLines = numberOfLines
 		return self
 	}
 }
