@@ -371,6 +371,12 @@ public extension TextStyles {
 	@discardableResult func truncatingTail() -> Self {
 		return setting(lineBreakMode: .byTruncatingTail)
 	}
+	@discardableResult func wordWrap() -> Self {
+		return setting(lineBreakMode: .byWordWrapping)
+	}
+	@discardableResult func characterWrap() -> Self {
+		return setting(lineBreakMode: .byCharWrapping)
+	}
 	@discardableResult func multiline() -> Self {
 		return setting(numberOfLines: 0)
 	}
