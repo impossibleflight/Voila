@@ -372,8 +372,7 @@ public extension TextStyles {
 		return setting(lineBreakMode: .byTruncatingTail)
 	}
 	@discardableResult func multiline() -> Self {
-		return setting(lineBreakMode: .byWordWrapping)
-			.setting(numberOfLines: 0)
+		return setting(numberOfLines: 0)
 	}
 }
 
