@@ -51,7 +51,7 @@ extension ComponentAttributes {
 		return UIFont.systemFont(ofSize: UIFont.systemFontSize)
 	}
 
-	public func textColor(for traits: UITraitCollection) -> UIColor? {
+	public func textColor(for traits: UITraitCollection, state: UIControl.State = .normal) -> UIColor? {
 		return ColorCompatibility.label
 	}
 
@@ -59,7 +59,7 @@ extension ComponentAttributes {
 		return UIFont.preferredFont(forTextStyle: textStyle)
 	}
 
-	public func textColor(forTextStyle textStyle: UIFont.TextStyle, traits: UITraitCollection) -> UIColor? {
+	public func textColor(forTextStyle textStyle: UIFont.TextStyle, state: UIControl.State = .normal, traits: UITraitCollection) -> UIColor? {
 		return ColorCompatibility.label
 	}
 

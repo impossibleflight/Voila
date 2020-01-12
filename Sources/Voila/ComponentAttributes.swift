@@ -29,10 +29,10 @@ public protocol ButtonAttributes {
 
 public protocol TextAttributes {
 	func font(for traits: UITraitCollection) -> UIFont?
-	func textColor(for traits: UITraitCollection) -> UIColor?
+	func textColor(for traits: UITraitCollection, state: UIControl.State) -> UIColor?
 
 	func font(forTextStyle: UIFont.TextStyle, traits: UITraitCollection) -> UIFont?
-	func textColor(forTextStyle: UIFont.TextStyle, traits: UITraitCollection) -> UIColor?
+	func textColor(forTextStyle: UIFont.TextStyle, state: UIControl.State, traits: UITraitCollection) -> UIColor?
 }
 
 public protocol TableAttributes {
